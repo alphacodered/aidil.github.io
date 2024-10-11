@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: hsl(0, 10%, 10%);
+    font-family: 'Rubik Burned', system-ui;
+}
+
+.container{
+    height: 250px;
+    width: 700px;
+    border: none;
+    border-bottom-left-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 50px;
+    background: linear-gradient(60deg,yellow,green);
+    box-shadow: 1px 1px 10px ;
+    position: relative;
+}
+
+.display-timer{
+    background: #fff;
+    color: black;
+    padding: 30px;
+    font-size: 3rem;
+    box-shadow: 0 0 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.button{
+    position: absolute;
+    bottom: 5px;
+    right: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 500px;
+    padding: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.button button{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 10px #000;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.button .start{
+    background: #d90429;
+}
+
+.button .stop{
+    background: #ffdd00;
+}
+
+.button .reset{
+    background: #38b000;
+}
+
+.button button:active{
+    background: hsl(1, 10%, 100%);
+}
